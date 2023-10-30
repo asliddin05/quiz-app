@@ -1,0 +1,78 @@
+@import '../../styles/colors.scss';
+
+.quiz-container {
+    position: relative;
+    width: 500px;
+    background-color: $bg;
+    border-radius: 4px;
+    margin-top: 100px;
+    padding: 30px 60px;
+}
+
+.active-question-no {
+    font-size: 32px;
+    font-weight: 500;
+    color: $primary;
+}
+
+.tota-question {
+    font-size: 16px;
+    font-weight: 500;
+    color: $disabled;
+}
+
+.question-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.list {
+    margin-top: 20px;
+    margin-left: -40px;
+}
+li {
+    font-size: 16px;
+    color: $foreground;
+    background: $bg;
+    border: 1px solid $disabled;
+    border-radius: 16px;
+    padding: 11px;
+    margin-top: 15px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+.selected-answer {
+    background-color: $primary;
+    border: 1px solid $accent;
+    color: $bg;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button {
+    background: linear-gradient(0deg, $primary 0.03%, $accent);
+    border-radius: 9px;
+    font-size: 18px;
+    color: $bg;
+    padding: 10px 42px;
+    margin-top: 15px;
+
+    &:disabled {
+        background: $bg-accent;
+        color: $disabled;
+        cursor: not-allowed;
+    }
+}
+
+.input {
+    border: 1px solid $disabled;
+    border-radius: 4px;
+    padding: 10px 20px;
+    width: 100%;
+    margin-top: 20px;
+}
